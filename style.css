@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#name{
+    color:white;
+    position: absolute;
+    left:20vw;
+    top:30vh;
+    animation-name:Animate3;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate
+}
+
+#container{
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#inner1{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border:2px solid black;
+    position:absolute;
+    background-image: url("img1.jpg");
+    background-size:cover;
+    background-position:center;
+    animation-name:Animate1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#inner2{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border:2px solid black;
+    position:absolute;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-position:center;
+    animation-name:Animate2;
+    animation-duration: 3s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Animate1{
+    from{
+        background-color: greenyellow;
+        top:0vh;
+    }
+    to{
+        background-color: yellow;
+        top:63vh;
+    }
+}
+
+@keyframes Animate2{
+    from{
+        background-color: greenyellow;
+        left:30vw;
+    }
+    to{
+        background-color: yellow;
+        left:55vw;
+    }
+}
+
+
+@keyframes Animate3{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+        font-size: 25px;
+        color:greenyellow;
+    }
+}
+
+
